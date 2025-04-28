@@ -17,7 +17,7 @@ def get_args():
     parser.add_argument('--threshold', type=float, default=1.0, help='neuron firing threshold')
     parser.add_argument('--celltype', type=str, default='backward', help='[forward, backward]')
     parser.add_argument('--second_avgpooling', type=int, default=2, help='momentum')
-    parser.add_argument('--search_space', type=list, default=['none','nor_conv_3x3', 'pool_3x3'], help='[none, skip_connect, nor_conv_1x1, nor_conv_3x3, pool_3x3]')
+    parser.add_argument('--search_space', type=list, default=['none','nor_conv_3x3', 'skip_connect'], help='[none, skip_connect, nor_conv_1x1, nor_conv_3x3, pool_3x3]')
     parser.add_argument('--repeat', type=int, default=2, help='SAHD eval count')
     parser.add_argument('--nbr_nodes', type=int, default=4, help='nbr of nodes')
 
